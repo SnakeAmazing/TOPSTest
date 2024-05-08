@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    application
 }
 
 group = "me.lluis.entrust.tops"
@@ -14,6 +15,14 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.0")
 }
 
+application {
+    mainClass = "me.lluis.entrust.tops.Main"
+}
+
 tasks.test {
     useJUnitPlatform()
+}
+
+tasks.getByName("run", JavaExec::class) {
+    standardInput = System.`in`
 }
