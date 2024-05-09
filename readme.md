@@ -23,3 +23,15 @@ or
 
 ./gradlew test (or .\gradlew test on Windows) to test the project
 ```
+
+### HOW TO USE
+If you select to run the default settings, the program will read the data from the file `document.txt` 
+and will output the results to a file called `output.txt` located in the same folder.
+
+If you select to enter custom settings, then you will be required to:
+1. Enter the absolute path to the file containing the data
+2. Enter the name of the output file
+3. Enter the number of lines per page
+4. Enter the number of characters per line
+
+After that, the program will process the data and place the output file in the `src/main/resources` folder.
