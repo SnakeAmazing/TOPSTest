@@ -42,6 +42,11 @@ public class FileParser {
         this.charsPerLine = charsPerLine;
     }
 
+    /**
+     * Parse the input file and write the paginated output to the output file
+     *
+     * @return Path to the output file
+     */
     public Path parse() {
         String line = "";
         try {

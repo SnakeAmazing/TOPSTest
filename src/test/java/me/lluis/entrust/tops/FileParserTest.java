@@ -50,7 +50,7 @@ public class FileParserTest {
         Path result = parser.parse();
 
         Assertions.assertEquals(output, result);
-        Path realResult = Path.of("src/test/resources/output.txt");
+        Path realResult = Path.of("src/main/resources/entrust-tops-output.txt");
 
         try {
             Assertions.assertEquals(Files.readString(realResult), Files.readString(output));
