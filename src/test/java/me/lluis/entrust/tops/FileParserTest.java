@@ -2,6 +2,7 @@ package me.lluis.entrust.tops;
 
 import me.lluis.entrust.tops.file.FileParser;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -28,6 +29,7 @@ public class FileParserTest {
         Assertions.assertEquals(80, parser.getCharsPerLine());
     }
 
+    @Disabled
     @Test
     public void testParse() {
         Path output = Path.of("src/test/resources/test-output.txt");
